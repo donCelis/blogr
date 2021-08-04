@@ -57,32 +57,63 @@ body {
   color: var(--white);
   border-bottom-left-radius: 75px;
 }
-.home .container{
+.home .container {
   position: relative;
   z-index: 1;
 }
-.home .back{
+.home .back {
   position: absolute;
-  right: -50%;
+  right: -65%;
   top: 50%;
-  transform: translateY(-50%) scale(0.9);
+  transform: translateY(-50%) scale(0.95);
   z-index: 0;
 }
-header {
+.home header {
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 0;
+  padding: 2rem 0 0;
 }
-menu {
+.home .logo {
+  margin-right: 2.5rem;
+}
+.home menu {
   align-items: center;
 }
-menu img {
+.home menu a::after {
+  content: "";
+  background: url("../images/icon-arrow-light.svg") no-repeat;
+  background-size: contain;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.4rem;
+}
+.home menu a,
+.home nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-family: var(--main-font);
+  font-weight: 600;
+  margin: 0 1.5rem;
+  padding: 0.4rem;
+  position: relative;
+}
+.home nav a:last-child {
+  background: var(--white);
+  color: var(--light-red);
+  border-radius: 50px;
+  padding: 0.7rem 2rem;
+}
+.home menu img {
   vertical-align: middle;
 }
 .home-content {
   text-align: center;
-  padding: 8rem 0;
+  padding: 10rem 0;
 }
 .home-title {
-  font-size: 3em;
+  font-size: 4em;
+  margin-bottom: 1.5rem;
 }
+/* home */
