@@ -54,9 +54,12 @@ a {
 }
 /* home */
 .home {
-  background: var(--main-gradient);
+  /* background: var(--main-gradient);
   position: relative;
-  overflow: hidden;
+  overflow: hidden; */
+  background: url("../images/bg-pattern-intro.svg") no-repeat 150px center,
+    var(--main-gradient);
+  background-size: 150%;
   color: var(--white);
   border-bottom-left-radius: 75px;
 }
@@ -138,18 +141,19 @@ a {
 /* home */
 /* infrastructure */
 .infrastructure {
-  background: linear-gradient(
-    90deg,
-    var(--very-dark-gray-blue) 0%,
-    var(--very-dark-desaturated-blue) 80%
-  );
+  background: url("../images/bg-pattern-circles.svg") no-repeat -200px bottom,
+    linear-gradient(
+      90deg,
+      var(--very-dark-gray-blue) 0%,
+      var(--very-dark-desaturated-blue) 80%
+    );
   color: var(--white);
   border-top-right-radius: 75px;
   border-bottom-left-radius: 75px;
   margin: 5rem 0;
   position: relative;
 }
-.infrastructure::before{
+/* .infrastructure::before{
   content: "";
   background: url("../images/bg-pattern-circles.svg") no-repeat;
   background-position: left center;
@@ -160,7 +164,7 @@ a {
   top: 0;
   border-top-right-radius: 75px;
   border-bottom-left-radius: 75px;
-}
+} */
 .infrastructure .row {
   align-items: center;
   justify-content: space-between;
