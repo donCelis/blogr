@@ -36,6 +36,9 @@ body {
   font-family: var(--main-font);
   font-weight: normal;
 }
+a {
+  text-decoration: none;
+}
 .row {
   display: flex;
   flex-flow: row wrap;
@@ -92,7 +95,6 @@ body {
 .home menu a,
 .home nav a {
   color: var(--white);
-  text-decoration: none;
   font-family: var(--main-font);
   font-weight: 600;
   margin: 0 1.5rem;
@@ -114,6 +116,23 @@ body {
 }
 .home-title {
   font-size: 4em;
-  margin-bottom: 1.5rem;
+}
+.home-content p {
+  margin: 0.8rem 0 3rem;
+  font-size: 1.2em;
+}
+.home-btn a {
+  display: inline-block;
+  color: var(--light-red);
+  background: var(--white);
+  margin: 0 0.6rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 50px;
+  border: 1px solid transparent;
+}
+.home-btn a:last-child{
+  color: var(--white);
+  background: transparent;
+  border: 1px solid var(--white);
 }
 /* home */
