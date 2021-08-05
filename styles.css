@@ -1,0 +1,120 @@
+:root {
+    --main-font: "Overpass", sans-serif;
+    --title-font: "Ubuntu", sans-serif;
+  
+    --light-red: hsl(356, 100%, 66%); /*  (CTA text) */
+    --very-light-red: hsl(355, 100%, 74%); /* (CTA hover background) */
+    --very-dark-blue: hsl(208, 49%, 24%); /* (headings) */
+  
+    --white: hsl(0, 0%, 100%); /* (text) */
+    --grayish-blue: hsl(240, 2%, 79%); /* (footer text) */
+    --very-dark-grayish-blue: hsl(207, 13%, 34%); /* (body copy) */
+    --very-dark-black-blue: hsl(240, 10%, 16%); /* (footer background) */
+  
+    /* Gradients */
+    --very-light-red: hsl(13, 100%, 72%);
+    --light-red: hsl(353, 100%, 62%);
+    --main-gradient: linear-gradient(
+      140deg,
+      var(--very-light-red) 0%,
+      var(--light-red) 50%
+    );
+  
+    --very-dark-gray-blue: hsl(237, 17%, 21%);
+    --very-dark-desaturated-blue: hsl(237, 23%, 32%);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--main-font);
+    font-weight: normal;
+  }
+  .row {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+  .img-fluid {
+    width: 100%;
+    vertical-align: middle;
+  }
+  /* home */
+  .home {
+    background: var(--main-gradient);
+    position: relative;
+    overflow: hidden;
+    color: var(--white);
+    border-bottom-left-radius: 75px;
+  }
+  .home .container {
+    position: relative;
+    z-index: 1;
+  }
+  .home .back {
+    position: absolute;
+    right: -65%;
+    top: 50%;
+    transform: translateY(-50%) scale(0.95);
+    z-index: 0;
+  }
+  .home header {
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0 0;
+  }
+  .home .logo {
+    margin-right: 2.5rem;
+  }
+  .home menu {
+    align-items: center;
+  }
+  .home menu a::after {
+    content: "";
+    background: url("../images/icon-arrow-light.svg") no-repeat;
+    background-size: contain;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0.4rem;
+  }
+  .home menu a,
+  .home nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-family: var(--main-font);
+    font-weight: 600;
+    margin: 0 1.5rem;
+    padding: 0.4rem;
+    position: relative;
+  }
+  .home nav a:last-child {
+    background: var(--white);
+    color: var(--light-red);
+    border-radius: 50px;
+    padding: 0.7rem 2rem;
+  }
+  .home menu img {
+    vertical-align: middle;
+  }
+  .home-content {
+    text-align: center;
+    padding: 10rem 0;
+  }
+  .home-title {
+    font-size: 4em;
+    margin-bottom: 1.5rem;
+  }
+  /* home */
+  
