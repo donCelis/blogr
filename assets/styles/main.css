@@ -15,9 +15,9 @@
   --very-light-red: hsl(13, 100%, 72%);
   --light-red: hsl(353, 100%, 62%);
   --main-gradient: linear-gradient(
-    140deg,
-    var(--very-light-red) 0%,
-    var(--light-red) 50%
+    to right,
+    var(--very-light-red) 20%,
+    var(--light-red) 80%
   );
 
   --very-dark-gray-blue: hsl(237, 17%, 21%);
@@ -57,9 +57,10 @@ a {
   /* background: var(--main-gradient);
   position: relative;
   overflow: hidden; */
-  background: url("../images/bg-pattern-intro.svg") no-repeat 150px center,
+  background: url("../images/bg-pattern-intro.svg") no-repeat,
     var(--main-gradient);
-  background-size: 150%;
+  background-position: -20% center, center;
+  background-size: 150%, auto;
   color: var(--white);
   border-bottom-left-radius: 75px;
 }
@@ -67,17 +68,17 @@ a {
   position: relative;
   z-index: 1;
 }
-.home .back {
+/* .home .back {
   position: absolute;
   right: -65%;
   top: 50%;
   transform: translateY(-50%) scale(0.95);
   z-index: 0;
-}
+} */
 .home header {
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 0 0;
+  padding: 3.5rem 0 0;
 }
 .home .logo {
   margin-right: 2.5rem;
@@ -115,10 +116,10 @@ a {
 }
 .home-content {
   text-align: center;
-  padding: 10rem 0;
+  padding: 8rem 0 10rem;
 }
 .home-title {
-  font-size: 4em;
+  font-size: 3.5em;
 }
 .home-content p {
   margin: 0.8rem 0 3rem;
@@ -141,16 +142,18 @@ a {
 /* home */
 /* infrastructure */
 .infrastructure {
-  background: url("../images/bg-pattern-circles.svg") no-repeat -200px bottom,
+  background: url("../images/bg-pattern-circles.svg") no-repeat,
     linear-gradient(
       90deg,
       var(--very-dark-gray-blue) 0%,
       var(--very-dark-desaturated-blue) 80%
     );
+  background-position: -50% 80%, center;
+  background-size: 70%, auto;
   color: var(--white);
   border-top-right-radius: 75px;
   border-bottom-left-radius: 75px;
-  margin: 5rem 0;
+  margin: 8rem 0;
   position: relative;
 }
 /* .infrastructure::before{
