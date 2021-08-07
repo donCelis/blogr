@@ -1,0 +1,177 @@
+:root {
+    --main-font: "Overpass", sans-serif;
+    --title-font: "Ubuntu", sans-serif;
+  
+    --light-red: hsl(356, 100%, 66%); /*  (CTA text) */
+    --very-light-red: hsl(355, 100%, 74%); /* (CTA hover background) */
+    --very-dark-blue: hsl(208, 49%, 24%); /* (headings) */
+  
+    --white: hsl(0, 0%, 100%); /* (text) */
+    --grayish-blue: hsl(240, 2%, 79%); /* (footer text) */
+    --very-dark-grayish-blue: hsl(207, 13%, 34%); /* (body copy) */
+    --very-dark-black-blue: hsl(240, 10%, 16%); /* (footer background) */
+  
+    /* Gradients */
+    --very-light-red: hsl(13, 100%, 72%);
+    --light-red: hsl(353, 100%, 62%);
+    --main-gradient: linear-gradient(
+      140deg,
+      var(--very-light-red) 0%,
+      var(--light-red) 50%
+    );
+  
+    --very-dark-gray-blue: hsl(237, 17%, 21%);
+    --very-dark-desaturated-blue: hsl(237, 23%, 32%);
+  }
+  
+* {
+  margin: 0;
+  padding: 0;
+  border: 0; 
+  outline: 0;
+  box-sizing: border-box;
+  }
+
+body{
+  font-family: var(--main-font);
+  font-weight: normal;
+}
+a{
+  text-decoration: none;
+}
+
+.row{
+  display: flex;
+  flex-flow: row wrap;
+}
+.container{
+  width: 80%;
+  margin:  0 auto;
+  max-width: 1440px;
+}
+.img-fluid{
+  width: 100%;
+  vertical-align: middle;
+}
+
+/*home*/
+.home{
+  background: var(--main-gradient);
+  position: relative;  
+  overflow: hidden;
+  color: var(--white);
+  border-bottom-left-radius: 75px ;
+}
+.home .container{
+  position: relative;
+  z-index: 1;
+}
+.home .back {
+  position:absolute;
+  right: -80%;
+  top: 60%;
+  transform: translateY(-50%) scale(0.95);
+  z-index: 0;
+}
+.home header{
+  align-items: center;
+  padding: 2rem 0 0rem;
+  justify-content: space-between;
+}
+.home .logo {
+  margin-right: 2.5rem;
+}
+.home menu {
+  align-items: center;
+  margin-left: 1rem;
+  
+}
+.home menu a:after {
+  content:"";
+  background: url(../assets/images/icon-arrow-light.svg);
+  background-size: contain;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.4rem;
+}
+.home menu a, .home nav a{
+  color:var(--white);
+  font-family: var(--main-font);
+  font-weight: 600;
+  margin: 0 1rem;
+  padding: 0.4rem;
+  position: relative;
+}
+.home nav a:last-child{
+  background: var(--white);
+  color: var(--light-red);
+  border-radius: 50px;
+  padding: 0.7rem 2rem;
+}
+.home menu img{
+  vertical-align: middle;
+}
+.home-content{
+  text-align: center;
+  padding: 10rem 0;
+}
+.home-title{
+  font-size: 4em; 
+}
+.home-content p{
+  margin: 0.8rem 0 4.5rem;
+  font-size: 1.2em;
+}
+.home-btn a{
+color: var(--light-red);
+background: var(--white);
+margin: 0 0.6rem;
+padding: 0.6rem 1.4rem;
+display: inline-block;
+border-radius: 50px;
+border: 1px solid transparent;
+}
+.home-btn a:last-child{
+color: var(--white);
+background: transparent;
+border: 1px solid var(--white);
+}
+
+/*telephone*/
+.telephone{
+  background: linear-gradient(90deg, var(--very-dark-black-blue) 0%,
+  var(--very-dark-desaturated-blue)80%);
+  color: var(--white);
+  border-top-right-radius: 75px;
+  border-bottom-left-radius: 75px;
+  margin: 5rem 0;
+  position: relative;
+}
+.telephone::before{
+  content:"";
+  background: url(../assets/images/bg-pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position: left center;  
+  position: absolute;
+  width: 100%;
+  height: 100%; 
+  border-top-right-radius: 75px;
+  border-bottom-left-radius: 75px;
+}
+.telephone .row{
+align-items: center;
+justify-content: space-between;
+position: relative;
+}
+.telephone picture, .telephone article{
+flex-basis: 50%;
+}
+.telephone picture{
+  margin: -4.5rem 0 -7rem;
+}
+.telephone article h4{
+  font-size: 2.2em;
+  margin-bottom: 0.6rem;
+}
