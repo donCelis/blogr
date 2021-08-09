@@ -43,6 +43,11 @@ a {
   display: flex;
   flex-flow: row wrap;
 }
+.column {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 3rem;
+}
 .container {
   width: 80%;
   margin: 0 auto;
@@ -139,7 +144,6 @@ a {
   color: var(--white);
   border-top-right-radius: 75px;
   border-bottom-left-radius: 75px;
-  margin: 8rem 0;
   position: relative;
 }
 .infrastructure .row {
@@ -159,3 +163,51 @@ a {
   margin-bottom: 0.6rem;
 }
 /* infrastructure */
+/* future */
+.future {
+  padding: 10rem 0 13rem;
+  overflow-x: hidden;
+}
+.future .row {
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.future h4 {
+  text-align: center;
+  font-size: 2.2em;
+}
+.future section {
+  flex-basis: 50%;
+}
+.future section article h5 {
+  margin-bottom: 2rem;
+  font-size: 1.5em;
+}
+.future picture {
+  flex-basis: 50%;
+  transform: translate(45%, 0) scale(1.5);
+}
+/* future */
+/* features */
+.features {
+  padding: 15rem 0;
+  overflow-x: hidden;
+}
+.features .row {
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.features section {
+  flex-basis: 50%;
+}
+.features section article h5 {
+  margin-bottom: 2rem;
+  font-size: 1.5em;
+}
+.features picture {
+  flex-basis: 50%;
+  transform: translate(-40%, 0) scale(1.5);
+}
+/* features */
