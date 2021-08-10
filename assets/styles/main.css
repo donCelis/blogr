@@ -35,6 +35,7 @@
 body {
   font-family: var(--main-font);
   font-weight: normal;
+  color: var(--very-dark-grayish-blue);
 }
 a {
   text-decoration: none;
@@ -62,7 +63,7 @@ a {
   background: url("../images/bg-pattern-intro.svg") no-repeat -20% center / 150%,
     var(--main-gradient) center / auto;
   color: var(--white);
-  border-bottom-left-radius: 75px;
+  border-bottom-left-radius: 4.6rem;
 }
 .home .container {
   position: relative;
@@ -122,9 +123,11 @@ a {
   color: var(--light-red);
   background: var(--white);
   margin: 0 0.6rem;
-  padding: 0.6rem 1.4rem;
+  padding: 0.9rem 1.2rem;
   border-radius: 50px;
   border: 1px solid transparent;
+  font-family: var(--title-font);
+  font-weight: 500;
 }
 .home-btn a:last-child {
   color: var(--white);
@@ -142,8 +145,8 @@ a {
       )
       center / auto;
   color: var(--white);
-  border-top-right-radius: 75px;
-  border-bottom-left-radius: 75px;
+  border-top-right-radius: 4.6rem;
+  border-bottom-left-radius: 4.6rem;
   position: relative;
 }
 .infrastructure .row {
@@ -159,7 +162,7 @@ a {
   margin: -4.5rem 0 -7rem;
 }
 .infrastructure article h4 {
-  font-size: 2.2em;
+  font-size: 2.5em;
   margin-bottom: 0.6rem;
 }
 /* infrastructure */
@@ -175,18 +178,18 @@ a {
 }
 .future h4 {
   text-align: center;
-  font-size: 2.2em;
+  font-size: 2.5em;
 }
 .future section {
   flex-basis: 50%;
 }
 .future section article h5 {
   margin-bottom: 2rem;
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 .future picture {
   flex-basis: 50%;
-  transform: translate(45%, 0) scale(1.5);
+  transform: translate(45%, 0) scale(1.6);
 }
 /* future */
 /* features */
@@ -204,10 +207,31 @@ a {
 }
 .features section article h5 {
   margin-bottom: 2rem;
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 .features picture {
   flex-basis: 50%;
-  transform: translate(-40%, 0) scale(1.5);
+  transform: translate(-40%, 0) scale(1.6);
 }
 /* features */
+/* footer */
+footer {
+  background: var(--very-dark-black-blue);
+  padding: 4.5rem 0;
+  border-top-right-radius: 4.6rem;
+  font-family: var(--title-font);
+}
+footer a {
+  color: var(--grayish-blue);
+  display: block;
+}
+footer .col {
+  flex-basis: 25%;
+}
+footer .col a {
+  margin-bottom: 0.8rem;
+}
+footer .col a:first-child {
+  margin-bottom: 2rem;
+}
+/* footer */
